@@ -8,6 +8,10 @@ workoutTrackRouter.post('/track', async (req: Request, res: Response, next: Next
   workoutTrackController.track(req, res, next)
 );
 
+workoutTrackRouter.get('/', async (req: Request, res: Response, next: NextFunction) =>
+  workoutTrackController.listAllTracks(req, res, next)
+);
+
 export default {
   basePath: '/workout-track',
   router: workoutTrackRouter

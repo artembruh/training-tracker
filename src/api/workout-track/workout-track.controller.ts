@@ -18,4 +18,16 @@ export class WorkoutTrackController {
       next(error);
     }
   }
+
+  public async listAllTracks(
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ): Promise<Response | undefined> {
+    try {
+      return res.json(await this.workoutTrackService.listAllTracks());
+    } catch (error) {
+      next(error);
+    }
+  }
 }

@@ -1,4 +1,4 @@
-import { type WorkoutExerciseEntity } from '../../interface/workout-exercise/workout-exercise.interface';
+import { type WorkoutExerciseEntity } from '../../interface';
 
 export const workoutExerciseMock: Array<[string, WorkoutExerciseEntity]> = [
   [

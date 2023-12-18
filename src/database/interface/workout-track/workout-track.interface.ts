@@ -1,8 +1,7 @@
 export interface WorkoutTrackEntity {
   id: string;
   date: string;
-  exerciseId: string;
-  workoutId: string;
+  workoutExerciseId: string;
   reps: number;
   set: number;
   weight: number;

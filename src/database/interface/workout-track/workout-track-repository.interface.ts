@@ -4,4 +4,5 @@ import { type WorkoutTrackDto } from '../../../api/workout-track/dto/workout-tra
 export interface WorkoutTrackRepository {
   create: (track: WorkoutTrackDto) => Promise<WorkoutTrackEntity>;
   get: (workoutId: string, exerciseId: string) => Promise<WorkoutTrackEntity>;
+  listAll: () => Promise<WorkoutTrackEntity[]>;
 }

@@ -1,10 +1,5 @@
 import { BaseService } from '../../base/base.service';
-import {
-  type ExerciseEntity,
-  type ProgramEntity,
-  type WorkoutEntity,
-  type WorkoutExerciseEntity
-} from '../../database/interface';
+import { type ProgramEntity } from '../../database/interface';
 import { type ProgramDto } from './dto/program.dto';
 
 export class ProgramService extends BaseService {
